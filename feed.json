@@ -1,0 +1,13 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "KS Playground",
+    "description": "",
+    "home_page_url": "https://kharisecario.github.io/practice",
+    "feed_url": "https://kharisecario.github.io/practice/feed.json",
+    "user_comment": "",
+    "author": {
+        "name": "Khari Secario"
+    },
+    "items": [
+    ]
+}
