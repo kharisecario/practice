@@ -9,4 +9,39 @@
     </author>
     <id>https://kharisecario.github.io/practice</id>
 
+    <entry>
+        <title>step01-splitframe</title>
+        <author>
+            <name>Khari Secario</name>
+        </author>
+        <link href="https://kharisecario.github.io/practice/step01-splitframe.html"/>
+        <id>https://kharisecario.github.io/practice/step01-splitframe.html</id>
+
+        <updated>2020-09-18T15:57:07+08:00</updated>
+            <summary>
+                <![CDATA[
+                    Ver 1.1 Updated on Thr Apr 23 2020 Changelog: @author: khari secario # -*- coding: utf-8 -*-import osos.system(&#39;mkdir -p frameoutput&#39;)for i in range (0,200,2): #change it based on the steps in gromacs print (&quot;Extracting frame %s...\n&quot; % str(i+1)) os.system(&quot;echo 2 | gmx trjconv -pbc mol&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Ver 1.1<br>Updated on Thr Apr 23 2020<br>Changelog:  </p>
+<ul>
+<li>update the way dumping frame  </li>
+</ul>
+<p>@author: khari secario</p>
+<pre><code class="language-python"># -*- coding: utf-8 -*-
+
+import os
+os.system(&#39;mkdir -p frameoutput&#39;)
+
+for i in range (0,200,2):   #change it based on the steps in gromacs
+    print (&quot;Extracting frame %s...\n&quot; % str(i+1))
+    os.system(&quot;echo 2 | gmx trjconv -pbc mol -f vlf-nve.trr -s mdtopol_nve.tpr -o frameoutput/frame%s.pdb -b %s -dump %s&quot; % (str(i+1).zfill(3), str(i).zfill(3), str(i+1).zfill(3)))
+
+print (&quot;Job finished!&quot;)</code></pre>
+
+            ]]>
+        </content>
+    </entry>
 </feed>

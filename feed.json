@@ -9,5 +9,19 @@
         "name": "Khari Secario"
     },
     "items": [
+        {
+            "id": "https://kharisecario.github.io/practice/step01-splitframe.html",
+            "url": "https://kharisecario.github.io/practice/step01-splitframe.html",
+            "title": "step01-splitframe",
+            "summary": "Ver 1.1 Updated on Thr Apr 23 2020 Changelog: @author: khari secario # -*- coding: utf-8 -*-import osos.system(&#39;mkdir -p frameoutput&#39;)for i in range (0,200,2): #change it based on the steps in gromacs print (&quot;Extracting frame %s...\\n&quot; % str(i+1)) os.system(&quot;echo 2 | gmx trjconv -pbc mol&hellip;",
+            "content_html": "<p>Ver 1.1<br>Updated on Thr Apr 23 2020<br>Changelog:  </p>\n<ul>\n<li>update the way dumping frame  </li>\n</ul>\n<p>@author: khari secario</p>\n<pre><code class=\"language-python\"># -*- coding: utf-8 -*-\n\nimport os\nos.system(&#39;mkdir -p frameoutput&#39;)\n\nfor i in range (0,200,2):   #change it based on the steps in gromacs\n    print (&quot;Extracting frame %s...\\n&quot; % str(i+1))\n    os.system(&quot;echo 2 | gmx trjconv -pbc mol -f vlf-nve.trr -s mdtopol_nve.tpr -o frameoutput/frame%s.pdb -b %s -dump %s&quot; % (str(i+1).zfill(3), str(i).zfill(3), str(i+1).zfill(3)))\n\nprint (&quot;Job finished!&quot;)</code></pre>\n",
+            "author": {
+                "name": "Khari Secario"
+            },
+            "tags": [
+            ],
+            "date_published": "2020-09-18T15:57:07+08:00",
+            "date_modified": "2020-09-18T15:57:07+08:00"
+        }
     ]
 }
